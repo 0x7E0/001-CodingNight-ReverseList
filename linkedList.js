@@ -10,7 +10,7 @@ function LinkedList() {
         getFirst: getFirst,
         getLast: getLast,
         getLength: getLength,
-        getReversedList: getReversedList
+        reverseList: reverseList
     };
 
     function add(value) {
@@ -38,8 +38,8 @@ function LinkedList() {
         return length;
     }
 
-    function getReversedList() {
-        return this;
+    function reverseList() {
+        // TODO
     }
 }
 module.exports = LinkedList;

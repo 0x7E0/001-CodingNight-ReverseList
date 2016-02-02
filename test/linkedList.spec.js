@@ -55,17 +55,22 @@ describe('LinkedList', function () {
         });
     });
     
-    describe('getReversedList()', function () {
+    describe('reverseList()', function () {
         it('should get the list in reversed order', function () {
             var linkedList = new LinkedList();
 
             linkedList.add(1);
             linkedList.add(2);
             linkedList.add(3);
+            linkedList.add(4);
+            linkedList.add(5);
+            linkedList.reverseList();
 
-            expect(linkedList.getFirst().value).to.be.equal(3);
-            expect(linkedList.getFirst().next.value).to.be.equal(2);
-            expect(linkedList.getFirst().next.next.value).to.be.equal(1);
+            expect(linkedList.getFirst().value).to.be.equal(5);
+            expect(linkedList.getFirst().next.value).to.be.equal(4);
+            expect(linkedList.getFirst().next.next.value).to.be.equal(3);
+            expect(linkedList.getFirst().next.next.next.value).to.be.equal(2);
+            expect(linkedList.getFirst().next.next.next.next.value).to.be.equal(1);
         });
     });
 });
