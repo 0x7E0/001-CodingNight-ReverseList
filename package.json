@@ -1,0 +1,15 @@
+{
+  "name": "linkedlist",
+  "version": "0.1.0",
+  "description": "Simple implementation of a linked list",
+  "main": "linkedList.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "author": "Philippe Morier (philippe.morier@zuhlke.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
