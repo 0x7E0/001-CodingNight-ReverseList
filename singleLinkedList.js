@@ -1,6 +1,6 @@
 var ListNode = require('./listNode');
 
-function LinkedList() {
+function SingleLinkedList() {
     var first;
     var last;
     var length = 0;
@@ -42,4 +42,4 @@ function LinkedList() {
         // TODO
     }
 }
-module.exports = LinkedList;
+module.exports = SingleLinkedList;
