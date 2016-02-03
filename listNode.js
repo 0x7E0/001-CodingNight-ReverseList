@@ -1,6 +1,7 @@
 function ListNode(value) {
     return {
-        value: value
+        value: value,
+        next: undefined
     }
 }
 
