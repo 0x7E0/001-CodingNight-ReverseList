@@ -35,11 +35,25 @@ function SingleLinkedList() {
     }
 
     function getLength() {
-        return length;
+        return length;  
     }
 
     function reverseList() {
-        // TODO
+        var current = first;
+        var previous = null;
+
+        while (current) {
+            // save next or you lose it
+            var next = current.next;
+            // reverse pointer
+            current.next = previous;
+            // increment previous to current node
+            previous = current;
+            // increment node to next node or null at end of list
+            current = next;
+        }
+
+        first = previous;
     }
 }
 module.exports = SingleLinkedList;
